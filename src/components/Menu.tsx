@@ -24,7 +24,9 @@ const Menu = ({ menu, setMenu }: any) => {
           </div>
           <div className=" flex flex-col h-full gap-8">
             <h2
-              onClick={() => router.push("/aboutUs")}
+              onClick={() => {
+                router.push("/aboutUs"), setMenu(false);
+              }}
               className=" text-3xl text-white  cursor-pointer"
             >
               Reth Nesh
@@ -59,19 +61,23 @@ const Menu = ({ menu, setMenu }: any) => {
               </Accordion>
             </div>
             <h2
-              onClick={() => router.push("/team")}
+              onClick={() => {
+                router.push("/team"), setMenu(false);
+              }}
               className=" text-3xl text-white  cursor-pointer"
             >
               Ekipi
             </h2>
             <h2
-              onClick={() => router.push("/portfolio")}
+              onClick={() => {router.push("/portfolio") , setMenu(false)}}
               className=" text-3xl text-white  cursor-pointer"
             >
               Portfolio
             </h2>
             <Button
-              onClick={() => router.push("/contact")}
+              onClick={() => {
+                router.push("/contact"), setMenu(false);
+              }}
               className=" bg-white font-bold border border-transparent hover:bg-gray-800 hover:border-white hover:text-white"
             >
               Kontakt

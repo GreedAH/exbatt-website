@@ -74,7 +74,7 @@ const Footer = () => {
         </Link>
       </div>
       <div className=" col-span-4 mt-1 border-t border-[#D92D3A]">
-        <p className=" text-xs mb-1">
+        <p className=" text-xs mb-1 text-center lg:text-left">
           Copyright © {currentYear} Exbatt. All rights reserved.
         </p>
       </div>
